@@ -14,6 +14,6 @@ function exactMatch(drivers, match) {
   return drivers.filter(function (driver) {
     var matches = false;
     for (var val in match) {
-      matches = driver.val === matcher.val;
+      matches = driver[val] === matcher[val];
     }    return matches;  });
 			}
