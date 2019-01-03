@@ -12,8 +12,8 @@ function driversWithRevenueOver(drivers, income){
 }
 function exactMatch(drivers, match) {
   return drivers.filter(function (driver) {
-    var matches = false;
-    for (var val in match) {
+    let matches = false;
+    for (const val in match) {
       matches = driver[val] === matcher[val];
     }    return matches;  });
 			}
