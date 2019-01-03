@@ -10,8 +10,8 @@ function driversWithRevenueOver(drivers, income){
       return driver.name;
     });
 }
-function exactMatch(drivers, match) {
-  return drivers.filter(function (driver) {
+function exactMatch(Driver, match) {
+  return Driver.filter(function (driver) {
     var matches = false;
     for (var val in match) {
       matches = driver[val] === match[val];
